@@ -10,13 +10,14 @@ namespace Array8
             // hangi günler müsaitsiniz...
             // müsaitlik saatlerinizi belirtiniz...
             string[] gunler = new string[1];
+            string[] adlar = new string[1];
             char durum;
             char statu;
 
             do
             {
 
-                string[] adlar = new string[1];
+         
 
 
                 // isim giriniz...
@@ -87,22 +88,26 @@ namespace Array8
 
             Console.WriteLine("Müsait olunan günler");
             Console.WriteLine("*****************************************************************");
-
-            foreach (var item in musaitGunler)
+            foreach (var item1 in adlar)
             {
-                Console.WriteLine($"{item}");
-            }
-
-            Console.WriteLine("Müsait olunmayan günler");
-            Console.WriteLine("*****************************************************************");
-        
-                foreach (var item in musaitDegilGunler)
+                        
+                foreach (var item in musaitGunler)
                 {
-                    Console.WriteLine($"{item}");
+                    if (item is not null)
+                        Console.WriteLine($"{item1} kullanıcının müsait olan gün {item}");
                 }
- 
-            Console.WriteLine("*****************************************************************");
+          
+                Console.WriteLine("*****************************************************************");
+                Console.WriteLine("Müsait olunmayan günler");
 
+                foreach (var item in musaitDegilGunler)
+                    {
+                    if(item is not null)
+                        Console.WriteLine($"{item1} kullanıcının müsait olmayan gün {item}");
+                    }
+ 
+                Console.WriteLine("*****************************************************************");
+            }
             Console.WriteLine("Sizin için gün seçmemi istermisiniz??? e/h");
             char cevap = Convert.ToChar(Console.ReadLine());
             if (cevap == 'e')
