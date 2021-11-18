@@ -16,10 +16,6 @@ namespace Array8
 
             do
             {
-
-         
-
-
                 // isim giriniz...
                 Console.WriteLine("Ad-Soyadınızı giriniz");
                 string ad = Console.ReadLine();
@@ -30,7 +26,6 @@ namespace Array8
                     Console.WriteLine("Daha önce eklediniz...");
 
                 Console.WriteLine("*****************************************************************");
-
 
                 do
                 {
@@ -50,13 +45,11 @@ namespace Array8
 
                 } while (durum == 'e');
 
-
                 Console.WriteLine("Yeni Bir kullanıcı eklemek ister misiniz?? e/h");
                 statu = Convert.ToChar(Console.ReadLine());
 
                 if (statu == 'e')
                     Array.Resize(ref adlar, adlar.Length + 1);
-
 
             } while (statu == 'e');
 
@@ -82,8 +75,6 @@ namespace Array8
                     musaitDegilGunler[i] = gunler[i];
 
                 }
-
-
             }
 
             Console.WriteLine("Müsait olunan günler");
