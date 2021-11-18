@@ -89,7 +89,7 @@ namespace ArrayFinal9
                 Console.WriteLine(item); // Furkan - 66
             Console.WriteLine($" Genel ortalama: {genelOrtalama} ");
 
-
+            //
             Console.ReadLine();
 
         }
