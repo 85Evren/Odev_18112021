@@ -40,7 +40,7 @@ namespace ArrayFinal9
 
 
             /*******/
-            // kalan ve geçen öğrencileri ilgili diziye ekleyiniz.....
+            // kalan ve geçen öğrencileri ilgili diziye ekleyiniz.....//
             //ss
 
             /******/
